@@ -1,7 +1,7 @@
 {
   "key": "plugin_upload_settings",
   "value": {
-    "sizeOptimization": true,
+    "sizeOptimization": false,
     "responsiveDimensions": true,
     "autoOrientation": false
   },
