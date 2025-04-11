@@ -1,0 +1,74 @@
+{
+  "documentId": "aq9gatwq5ehk3uy7awlkoykt",
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "vvg5i34xthbuazt86lfksyth",
+      "action": "api::category.category.find",
+      "locale": null
+    },
+    {
+      "documentId": "tqnzlmk9d6dkuv48zyuw1uzx",
+      "action": "api::category.category.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "o7p397t99ewe9l1sgssy9e7i",
+      "action": "api::tag.tag.find",
+      "locale": null
+    },
+    {
+      "documentId": "xdxcy8nzypbxekecxlwbt9k6",
+      "action": "api::tag.tag.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "h346xv0cjqtbw58k0urf8d21",
+      "action": "plugin::upload.content-api.find",
+      "locale": null
+    },
+    {
+      "documentId": "vx4c902oyb3krfco4zwuwfqb",
+      "action": "plugin::upload.content-api.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "gwtthxoin3vmdw4elq3rhwt0",
+      "action": "plugin::users-permissions.auth.callback",
+      "locale": null
+    },
+    {
+      "documentId": "o5uba79jytqlqpw6gyrixacr",
+      "action": "plugin::users-permissions.auth.connect",
+      "locale": null
+    },
+    {
+      "documentId": "m8tmwwrinnsy2ojgtvyj8mn5",
+      "action": "plugin::users-permissions.auth.emailConfirmation",
+      "locale": null
+    },
+    {
+      "documentId": "mnyr7q19w8nwlvs45empjdcp",
+      "action": "plugin::users-permissions.auth.forgotPassword",
+      "locale": null
+    },
+    {
+      "documentId": "ztit81pchabmw4lg0gyrgae5",
+      "action": "plugin::users-permissions.auth.register",
+      "locale": null
+    },
+    {
+      "documentId": "vjc6jglpmhm88xd4yx3x4imu",
+      "action": "plugin::users-permissions.auth.resetPassword",
+      "locale": null
+    },
+    {
+      "documentId": "wws1vsbb83pk2lqj2t0nj8k9",
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation",
+      "locale": null
+    }
+  ]
+}
