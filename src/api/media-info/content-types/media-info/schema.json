@@ -4,22 +4,23 @@
   "info": {
     "singularName": "media-info",
     "pluralName": "media-infos",
-    "displayName": "MediaInfo"
+    "displayName": "MediaInfo",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     }
   }
 }
