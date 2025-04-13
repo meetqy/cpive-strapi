@@ -6,86 +6,81 @@
   "locale": null,
   "permissions": [
     {
-      "documentId": "jkroa3gh8nfhbx7vvzc3ajv0",
+      "documentId": "u3bxqobadekwzgl9qmxhmi1g",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
-      "subject": "api::category.category",
+      "subject": "api::media-info.media-info",
       "properties": {
         "fields": [
-          "name",
-          "tags",
-          "content"
+          "media",
+          "tags"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "mis748w6yw2fjar5jsmd2yfb",
+      "documentId": "g5r0kxwaeeptkc2cykzopm9e",
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
-      "subject": "api::category.category",
+      "subject": "api::media-info.media-info",
       "properties": {},
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "gb3slpldepl8adxlocaek2va",
+      "documentId": "bqap5ddxk5456gtlegz0hiwz",
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
-      "subject": "api::category.category",
+      "subject": "api::media-info.media-info",
       "properties": {},
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "b441ddp70nnzycsscskbq9px",
+      "documentId": "f1bibubf18qiujqs5xub89rz",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
-      "subject": "api::category.category",
+      "subject": "api::media-info.media-info",
       "properties": {
         "fields": [
-          "name",
-          "tags",
-          "content"
+          "media",
+          "tags"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "yqhq197ghc7kx4nd7vawxi44",
+      "documentId": "e9luv490jpax3ear5kgfwuk0",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
-      "subject": "api::category.category",
+      "subject": "api::media-info.media-info",
       "properties": {
         "fields": [
-          "name",
-          "tags",
-          "content"
+          "media",
+          "tags"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "mjm17iagh1heszo2fahuee2z",
+      "documentId": "yjavk5g0la7hxpa8w83lue02",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::tag.tag",
       "properties": {
         "fields": [
           "name",
-          "content",
-          "images",
-          "category"
+          "media_infos"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "qm6g1zb8osvss73t63w55xr5",
+      "documentId": "crt13ae4770piyculztg9vs1",
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::tag.tag",
@@ -94,7 +89,7 @@
       "locale": null
     },
     {
-      "documentId": "zxrb3f5kbgmgjyaz39795udm",
+      "documentId": "la8b096lndssff2kp2t7qbxt",
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::tag.tag",
@@ -103,32 +98,28 @@
       "locale": null
     },
     {
-      "documentId": "b081rpetghvbc3stbo2vrq4h",
+      "documentId": "flj1evgbooe27fgmylwcowv7",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::tag.tag",
       "properties": {
         "fields": [
           "name",
-          "content",
-          "images",
-          "category"
+          "media_infos"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "fx07xh6rya0vl8yaj8rmtluz",
+      "documentId": "aqpked0bc9c53wfp3ve1h63x",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::tag.tag",
       "properties": {
         "fields": [
           "name",
-          "content",
-          "images",
-          "category"
+          "media_infos"
         ]
       },
       "conditions": [],

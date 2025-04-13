@@ -6,26 +6,6 @@
   "locale": null,
   "permissions": [
     {
-      "documentId": "vvg5i34xthbuazt86lfksyth",
-      "action": "api::category.category.find",
-      "locale": null
-    },
-    {
-      "documentId": "tqnzlmk9d6dkuv48zyuw1uzx",
-      "action": "api::category.category.findOne",
-      "locale": null
-    },
-    {
-      "documentId": "o7p397t99ewe9l1sgssy9e7i",
-      "action": "api::tag.tag.find",
-      "locale": null
-    },
-    {
-      "documentId": "xdxcy8nzypbxekecxlwbt9k6",
-      "action": "api::tag.tag.findOne",
-      "locale": null
-    },
-    {
       "documentId": "h346xv0cjqtbw58k0urf8d21",
       "action": "plugin::upload.content-api.find",
       "locale": null

@@ -33,47 +33,19 @@
           "sortable": true
         }
       },
-      "content": {
+      "media_infos": {
         "edit": {
-          "label": "content",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "content",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "images": {
-        "edit": {
-          "label": "images",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "images",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "category": {
-        "edit": {
-          "label": "category",
+          "label": "media_infos",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "name"
+          "mainField": "id"
         },
         "list": {
-          "label": "category",
-          "searchable": true,
-          "sortable": true
+          "label": "media_infos",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -139,7 +111,7 @@
       "list": [
         "id",
         "name",
-        "images",
+        "media_infos",
         "createdAt"
       ],
       "edit": [
@@ -147,21 +119,9 @@
           {
             "name": "name",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "content",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "images",
-            "size": 6
           },
           {
-            "name": "category",
+            "name": "media_infos",
             "size": 6
           }
         ]
