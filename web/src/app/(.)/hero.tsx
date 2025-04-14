@@ -1,23 +1,12 @@
 "use client";
 
 import { client } from "@/api";
+import { gql } from "@apollo/client";
 import { useEffect } from "react";
 
 export function Hero() {
   const getData = async () => {
-    const res = await client.GET("/tags", {
-      params: {
-        query: {
-          populate: {
-            media_infos: {
-              fields: ["id"],
-            },
-          },
-        },
-      },
-    });
-
-    console.log(res);
+    gql();
   };
 
   useEffect(() => {
