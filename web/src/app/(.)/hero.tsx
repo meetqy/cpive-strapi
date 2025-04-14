@@ -1,5 +1,3 @@
-"use client";
-
 export function Hero() {
   return (
     <div className="relative isolate -z-10">

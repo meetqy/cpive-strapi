@@ -30,10 +30,12 @@ export function NavbarHeader() {
           color="foreground"
         >
           <Icon
-            className="size-12 text-primary"
-            icon="material-symbols:delivery-truck-bolt-outline"
+            className="size-10 text-orange-500"
+            icon="material-symbols-light:delivery-truck-bolt-outline"
           />
-          <span className="font-bold text-3xl">CPive</span>
+          <span className="font-medium text-2xl">
+            C<span className="text-orange-500">Pive</span>
+          </span>
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
