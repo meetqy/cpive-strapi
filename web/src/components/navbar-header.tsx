@@ -5,7 +5,6 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
@@ -24,13 +23,18 @@ export const AcmeLogo = () => {
 
 export function NavbarHeader() {
   return (
-    <Navbar maxWidth="xl">
-      <NavbarBrand className="gap-1 items-center">
-        <Icon
-          className="size-12 text-primary"
-          icon="material-symbols:delivery-truck-bolt-outline"
-        />
-        <div className="font-bold text-3xl">CPive</div>
+    <Navbar maxWidth="xl" position="sticky">
+      <NavbarBrand>
+        <Link
+          className="flex items-center gap-1 cursor-pointer"
+          color="foreground"
+        >
+          <Icon
+            className="size-12 text-primary"
+            icon="material-symbols:delivery-truck-bolt-outline"
+          />
+          <span className="font-bold text-3xl">CPive</span>
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -38,25 +42,10 @@ export function NavbarHeader() {
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <Link href="#">Share</Link>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
