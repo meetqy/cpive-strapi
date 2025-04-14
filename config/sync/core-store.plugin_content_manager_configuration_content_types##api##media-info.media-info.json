@@ -7,7 +7,7 @@
       "searchable": true,
       "pageSize": 20,
       "mainField": "id",
-      "defaultSortOrder": "ASC",
+      "defaultSortOrder": "DESC",
       "defaultSortBy": "id"
     },
     "metadatas": {
