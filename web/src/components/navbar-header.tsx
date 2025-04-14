@@ -29,13 +29,13 @@ export function NavbarHeader() {
           className="flex items-center gap-1 cursor-pointer"
           color="foreground"
         >
-          <Icon
-            className="size-10 text-orange-500"
-            icon="material-symbols-light:delivery-truck-bolt-outline"
-          />
-          <span className="font-medium text-2xl">
-            C<span className="text-orange-500">Pive</span>
-          </span>
+          <div className="scale-x-[-1]">
+            <Icon
+              className="size-10 text-orange-500"
+              icon="material-symbols-light:delivery-truck-bolt-outline"
+            />
+          </div>
+          <span className="font-medium text-2xl underline">CPive</span>
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
