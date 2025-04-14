@@ -72,27 +72,38 @@ export const BatchAddTagsButton: BulkActionComponent = ({
         }, []);
 
         const handleSubmit = async (type: "connect" | "disconnect") => {
-          await Promise.all(
-            documents.map((item) =>
-              put(
-                `/content-manager/collection-types/api::media-info.media-info/${item.documentId}`,
-                {
-                  tags: {
-                    [type]: selectTags.map((tag) => ({
-                      id: tag.id,
-                      documentId: tag.documentId,
-                      isTemporary: true,
-                    })),
-                  },
-                }
+          try {
+            await Promise.all(
+              documents.map((item) =>
+                put(
+                  `/content-manager/collection-types/api::media-info.media-info/${item.documentId}`,
+                  {
+                    tags: {
+                      [type]: selectTags.map((tag) =>
+                        type === "connect"
+                          ? {
+                              id: tag.id,
+                              documentId: tag.documentId,
+                              isTemporary: true,
+                            }
+                          : { id: tag.id, documentId: tag.documentId }
+                      ),
+                    },
+                  }
+                )
               )
-            )
-          );
+            );
+            notification.toggleNotification({
+              type: "success",
+              message: "Tags updated successfully",
+            });
+          } catch (e) {
+            notification.toggleNotification({
+              type: "warning",
+              message: "Failed to update tags",
+            });
+          }
 
-          notification.toggleNotification({
-            type: "success",
-            message: "Tags updated successfully",
-          });
           onClose();
         };
 
