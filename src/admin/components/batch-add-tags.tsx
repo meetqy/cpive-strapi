@@ -177,15 +177,13 @@ export const BatchAddTagsButton: BulkActionComponent = ({
               <Button variant="tertiary" onClick={onClose}>
                 Cancel
               </Button>
-              <div style={{ display: "flex", gap: 12 }}>
-                <Button
-                  variant="danger"
-                  onClick={() => handleSubmit("disconnect")}
-                >
-                  DisConnect
-                </Button>
-                <Button onClick={() => handleSubmit("connect")}>Connect</Button>
-              </div>
+              <Button
+                variant="danger"
+                onClick={() => handleSubmit("disconnect")}
+              >
+                DisConnect
+              </Button>
+              <Button onClick={() => handleSubmit("connect")}>Connect</Button>
             </Modal.Footer>
           </>
         );
