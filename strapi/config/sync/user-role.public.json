@@ -6,6 +6,26 @@
   "locale": null,
   "permissions": [
     {
+      "documentId": "al7hu3t7qmwopkutzad4lm8g",
+      "action": "api::media-info.media-info.find",
+      "locale": null
+    },
+    {
+      "documentId": "kex4ftouhv3vyzh2kef68v3k",
+      "action": "api::media-info.media-info.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "tl5846bcg2bodue2d964uglu",
+      "action": "api::tag.tag.find",
+      "locale": null
+    },
+    {
+      "documentId": "vkvebthflqr43hrec2mm6d0s",
+      "action": "api::tag.tag.findOne",
+      "locale": null
+    },
+    {
       "documentId": "h346xv0cjqtbw58k0urf8d21",
       "action": "plugin::upload.content-api.find",
       "locale": null

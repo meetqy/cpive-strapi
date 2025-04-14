@@ -1,4 +1,28 @@
+"use client";
+
+import { client } from "@/api";
+import { useEffect } from "react";
+
 export function Hero() {
+  const getData = async () => {
+    const res = await client.GET("/tags", {
+      params: {
+        query: {
+          populate: {
+            media_infos: {
+              fields: ["id"],
+            },
+          },
+        },
+      },
+    });
+
+    console.log(res);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="relative isolate -z-10">
       <svg
