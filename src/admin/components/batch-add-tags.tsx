@@ -71,14 +71,14 @@ export const BatchAddTagsButton: BulkActionComponent = ({
           getTags();
         }, []);
 
-        const handleConfirm = async () => {
+        const handleSubmit = async (type: "connect" | "disconnect") => {
           await Promise.all(
             documents.map((item) =>
               put(
                 `/content-manager/collection-types/api::media-info.media-info/${item.documentId}`,
                 {
                   tags: {
-                    connect: selectTags.map((tag) => ({
+                    [type]: selectTags.map((tag) => ({
                       id: tag.id,
                       documentId: tag.documentId,
                       isTemporary: true,
@@ -166,7 +166,15 @@ export const BatchAddTagsButton: BulkActionComponent = ({
               <Button variant="tertiary" onClick={onClose}>
                 Cancel
               </Button>
-              <Button onClick={handleConfirm}>Confirm</Button>
+              <div style={{ display: "flex", gap: 12 }}>
+                <Button
+                  variant="danger"
+                  onClick={() => handleSubmit("disconnect")}
+                >
+                  DisConnect
+                </Button>
+                <Button onClick={() => handleSubmit("connect")}>Connect</Button>
+              </div>
             </Modal.Footer>
           </>
         );
