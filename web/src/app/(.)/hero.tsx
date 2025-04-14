@@ -38,8 +38,8 @@ export function Hero() {
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
               <h1 className="text-5xl font-semibold tracking-tight text-pretty text-foreground-900 sm:text-7xl">
-                Free coloring pages{" "}
-                <span className="text-primary">download and print</span>
+                <span className="text-primary"> Free coloring pages </span>{" "}
+                download and print
               </h1>
               <p className="mt-8 text-lg font-medium text-pretty text-foreground-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
                 No sign up required, Free to download and print beautifully,
@@ -47,7 +47,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+            <div className="mt-14 flex justify-end gap-8 sm:-mt-12 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div className="relative">
                   <img
